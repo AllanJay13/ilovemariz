@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/cd65145353.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Dayang</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Mariz</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Videos</a></li>
+            </ul>
+            <a href="#" class="action_btn">Message</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Videos</a></li>
+            
+            <li><a href="#" class="action_btn">Message</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>I Love You So Much Mahal !</h1>
+            <p>
+                Kahit pinag hiwalay man tayo ng tadhana palagi mong tatandaan na
+                mahal na mahal kita mahal ko. kahit anung pagsubok pa ang dumating sating
+                dalawa pangako ko sayo di kita iiwan. kahit ganito and sitwasyon natin mag kalayo,
+                minahal kita ng walang alinlangan at kuntento na sayo. tandaan mo andito lng ako palagi
+                magkalayo man tayo. Gihigugma taka sobra!
+            </p>
+        </section>
+    </main>
+
+    <div class="cont">
+        <!--<div class="bar"></div>-->
+        <div class="button-container">
+            <div class="button" style="--color: #f05153">
+                <div class="dot"></div>
+                <div class="light"></div>
+                <button >
+                    <a href="https://www.facebook.com/marizdale20" class="fat fa-brands fa-facebook"></a>
+                    <span><i><b>facebook</b></i></span>
+                </button>
+            </div>
+            <div class="button" style="--color: #f08324">
+                <div class="dot"></div>
+                <div class="light"></div>
+                <button>
+                    <a class="fat1 fa-solid fa-code-branch"
+                     href="https://www.threads.net/@iammarizbieber"></a>
+                    <span><i><b>threads</b></i></span>
+                </button>
+            </div>
+            <div class="button" style="--color: #ebcd1d">
+                <div class="dot"></div>
+                <div class="light"></div>
+                <button>
+                    <a href="https://www.instagram.com/iammarizbieber/?igshid=NzZlODBkYWE4Ng%3D%3D&fbclid=IwAR304IEka_QdQhsccJAFt3IoYvpotuvCaiIsgahLdrpmiMhOPqb9pUm_NkE"
+                     class="fat2 fa-brands fa-instagram">                    
+                    </a>
+                    <span><i><b>insta</b></i></span>
+                </button>
+            </div>
+            <div class="button" style="--color: #00adb8">
+                <div class="dot"></div>
+                <div class="light"></div>
+                <button>
+                    <a href="https://ngl.link/iammarizbieber?fbclid=IwAR0x-ITyT9A9iGN-ZGkWQ-jmolqfLfy0VLbar-ShxdjJYPhUhdBlHnK2M78" 
+                     class="fat3 fa-solid fa-paper-plane"></a>
+                    <span><i><b>NgL</b></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-bars'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
+             
